@@ -1,0 +1,163 @@
+body {
+  background-color: rgb(205, 240, 234);
+  /* rgb(154, 22, 99); */
+  /* rgb(223, 223, 222); */
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container {
+  width: 380px;
+  height: 500px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 0 5px 5px rgb(141, 141, 170);
+}
+
+
+
+/* image pref */
+
+.img-container {
+  border-radius: 20px;
+  width: 70%;
+  height: 55%;
+  position: relative;
+  top:-50px;
+  overflow: hidden;
+  box-shadow: 0 0 7px 4px rgb(141, 141, 170);
+  border: 0.2px solid white;
+}
+
+
+
+.img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* name and author */
+
+.descr-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+  font-size: 2rem;
+  
+}
+
+.author {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+
+
+/* time-current */
+
+.current-time-container {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.current-time {
+  margin: 5px 0;
+}
+
+.total-time {
+  margin: 5px 0;
+}
+/* progress bar */
+
+.current-progress {
+  width: 90%;
+}
+
+.white {
+  width: 100%;
+  background-color: white;
+  border: 0.2px solid black;
+  cursor: pointer;
+}
+
+.dark {
+  height: 3px;
+  background-color: black;
+
+}
+
+
+/* controls */
+
+.controls {
+  margin-top: 35px;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play {
+  font-size: 3.5rem;
+  cursor: pointer;
+}
+
+.next {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+
+.prev {
+  font-size: 2.7rem;
+  cursor: pointer;
+}
+
+.next:active, .prev:active {
+  color:rgb(141, 141, 170);
+}
+
+
+@media screen and (max-width:400px) {
+  .sub-container {
+    width: 90%;
+    height: 450px; 
+} 
+  .img-container {
+    width: 70%;
+    height: 55%;
+    top:-40px;
+}
+  .controls {
+    margin-top: 25px;}
+
+}
